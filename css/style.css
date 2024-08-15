@@ -597,8 +597,8 @@ header .ham-burger.active span:nth-child(2){
 }
 
 .gallery .content .box{
-	flex:0 0 30%; /* Updated from 50% to 30% to reduce size by 60% */
-	max-width: 30%; /* Updated from 50% to 30% to reduce size by 60% */
+	flex:0 0 50%; /* Restored to original 50% */
+	max-width: 50%; /* Restored to original 50% */
 }
 
 .gallery .content .box img{
@@ -608,13 +608,13 @@ header .ham-burger.active span:nth-child(2){
 	filter: grayscale(100%);
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
-	transform: scale(0.6); /* Added to scale the image size down by 60% */
+	transform: none; /* Removed scaling transformation */
 }
 
 .gallery .content .box img:hover{
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
-	transform: scale(0.6); /* Ensure scale effect remains on hover */
+	transform: none; /* Removed scaling transformation */
 }
 
 .gallery h2{
