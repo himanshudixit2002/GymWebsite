@@ -597,9 +597,10 @@ header .ham-burger.active span:nth-child(2){
 }
 
 .gallery .content .box{
-	flex:0 0 50%;
-	max-width: 50%;	
+	flex:0 0 30%; /* Updated from 50% to 30% to reduce size by 60% */
+	max-width: 30%; /* Updated from 50% to 30% to reduce size by 60% */
 }
+
 .gallery .content .box img{
 	display: block;
 	width: 100%;
@@ -607,10 +608,13 @@ header .ham-burger.active span:nth-child(2){
 	filter: grayscale(100%);
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
+	transform: scale(0.6); /* Added to scale the image size down by 60% */
 }
+
 .gallery .content .box img:hover{
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
+	transform: scale(0.6); /* Ensure scale effect remains on hover */
 }
 
 .gallery h2{
@@ -620,6 +624,7 @@ header .ham-burger.active span:nth-child(2){
     padding: 0px 0px 20px;
     text-align: center;
 }
+
 
 
 /*Price Section*/
